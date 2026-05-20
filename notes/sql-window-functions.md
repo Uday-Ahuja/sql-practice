@@ -129,7 +129,7 @@ SELECT * FROM (
 ### PERCENT_RANK()
 
 Returns relative rank as a percentage between 0 and 1.  
-Formula: `(rank - 1) / (total rows - 1)`
+Formula: `(rank - 1) / (total rows in partition - 1)`
 
 ```sql
 SELECT emp_name, salary,
